@@ -3,7 +3,7 @@ variable "organization" {
   type        = string
 }
 
-variable "GITHUB_TOKEN" {
+variable "github_token" {
   description = "GitHub access token used to configure the provider"
   type        = string
 }
