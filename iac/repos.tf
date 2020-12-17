@@ -1,10 +1,8 @@
 resource "github_repository" "example" {
-  name        = "example"
-  description = "My awesome codebase"
-}
+  name          = "example"
+  description   = "My awesome codebase"
 
-resource "github_repository" "example2" {
-  name        = "example2"
-  description = "My awesome codebase2"
+  has_projects  = false
+  has_wiki      = false
+  has_downloads = false
 }
-
