@@ -1,6 +1,6 @@
 repos = {
   "example" = {
-    "description" = "My Example Repo for test"
+    "description" = "My Example Repo"
   }
   "example2" = {
     "description" = "My Example 2 Repo"
