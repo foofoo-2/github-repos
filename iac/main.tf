@@ -10,7 +10,6 @@ terraform {
 }
 
 provider "github" {
-  #organization = "foofoo-2"
-  token        = var.GITHUB_TOKEN
+  token = var.GITHUB_TOKEN
 }
 

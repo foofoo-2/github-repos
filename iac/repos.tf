@@ -1,6 +1,8 @@
 resource "github_repository" "example" {
-  name          = "example"
-  description   = "My awesome codebase"
+  for_each      = var.repos
+
+  name          = each.key
+  description   = each.value.description
 
   has_projects  = false
   has_wiki      = false

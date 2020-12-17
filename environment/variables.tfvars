@@ -1,1 +1,5 @@
-repo_name = "example"
+repos = {
+  "example" = {
+    "description" = "My Example Repo"
+  }
+}
