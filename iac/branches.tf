@@ -1,8 +1,9 @@
 resource "github_branch_protection" "example" {
   for_each       = var.repos
 
-  repository     = each.key
-  branch         = "main"
+  repository_id  = each.key
+  pattern        = "main"
+
   enforce_admins = true
 
   required_pull_request_reviews {
