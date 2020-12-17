@@ -1,12 +1,13 @@
 resource "github_repository" "example" {
-  for_each      = var.repos
+  for_each               = var.repos
 
-  name          = each.key
-  description   = each.value.description
+  name                   = each.key
+  description            = each.value.description
 
-  has_projects  = false
-  has_wiki      = false
-  has_downloads = false
+  has_projects           = false
+  has_wiki               = false
+  has_downloads          = false
 
   delete_branch_on_merge = true
+  auto_init              = true
 }
