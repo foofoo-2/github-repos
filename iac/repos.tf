@@ -7,4 +7,6 @@ resource "github_repository" "example" {
   has_projects  = false
   has_wiki      = false
   has_downloads = false
+
+  delete_branch_on_merge = true
 }
