@@ -9,6 +9,4 @@ resource "github_branch_protection" "branch_protection" {
   required_pull_request_reviews {
     required_approving_review_count = 1
   }
-
-  #depends_on = [github_repository.repository]
 }
