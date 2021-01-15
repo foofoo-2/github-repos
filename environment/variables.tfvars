@@ -1,8 +1,11 @@
 repos = {
-  "example" = {
+  "repo1" = {
     "description" = "My Example Repo"
   }
-  "example2" = {
+  "repo2" = {
+    "description" = "My Example 2 Repo"
+  }
+  "repo3" = {
     "description" = "My Example 2 Repo"
   }
 }
