@@ -1,4 +1,4 @@
-repos = {
+repositories = {
   "example1" = {
     "description" = "My Example 1 Repo"
   }
