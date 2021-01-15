@@ -1,5 +1,5 @@
 resource "github_branch_protection" "branch_protection" {
-  for_each       = var.repos
+  for_each       = var.repositories
 
   repository_id  = each.key
   pattern        = "main"
