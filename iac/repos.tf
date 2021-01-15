@@ -1,4 +1,4 @@
-resource "github_repository" "example" {
+resource "github_repository" "repository" {
   for_each               = var.repos
 
   name                   = each.key

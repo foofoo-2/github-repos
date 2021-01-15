@@ -1,4 +1,4 @@
-resource "github_branch_protection" "example" {
+resource "github_branch_protection" "branch_protection" {
   for_each       = var.repos
 
   repository_id  = each.key
@@ -10,5 +10,5 @@ resource "github_branch_protection" "example" {
     required_approving_review_count = 1
   }
 
-  depends_on = [github_repository.example]
+  depends_on = [github_repository.repository]
 }
